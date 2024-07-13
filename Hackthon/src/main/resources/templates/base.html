@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html
-     class="light"  
+  class="light"
   lang="en"
   th:fragment="parent(content,title,script)"
   xmlns:th="http://www.thymeleaf.org"
@@ -9,11 +9,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-th-replace="${title}">SCM</title>
-    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -23,8 +25,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
-    <body class="dark:bg-gray-900 dark:text-white bg-gray-100"></body>
+  <body class="dark:bg-gray-900 bg-gray-100 dark:text-white">
+    <!-- commona header -->
     <div data-th-replace="navbar :: navbar"></div>
 
     <!-- main content -->
@@ -32,8 +34,9 @@
       <section data-th-replace="${content}"></section>
     </div>
     <!-- flow bite content -->
+
     <!-- common footer -->
-    <footer class="p-4">Footer: Learn Code With Durgesh</footer>
+    <!-- <footer class="p-4">Footer: Learn Code With Durgesh</footer> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script data-th-src="@{'/js/script.js'}"></script>

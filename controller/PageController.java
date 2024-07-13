@@ -87,7 +87,7 @@ public class PageController {
     @RequestMapping(value = "/do-register", method = RequestMethod.POST)
     public String processRegister(@ModelAttribute UserForm userForm, HttpSession session) {
         System.out.println("Processing registration");
-        // fetch form data
+        // fetch form data  
         // UserForm
         System.out.println(userForm);
 
